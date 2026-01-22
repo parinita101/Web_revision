@@ -136,24 +136,24 @@ width="400"></iframe>
 
 <h4>Form </h4>
 
-<form> 
+<form method="post"> 
  
-    Name: <input type="text"> 
+    Name: <input type="text" name="name" required maxlength="5"> 
     <br><br> 
  
-    Email: <input type="email"> 
+    Email: <input type="email" required> 
     <br><br> 
  
-    Password: <input type="password"> 
+    Password: <input type="password" required minlength="8"> 
     <br><br> 
  
-    Mobile Number: <input type="number"> 
+    Mobile Number: <input type="number" required> 
     <br><br> 
  
-    DOB: <input type="date"> 
+    DOB: <input type="date" required> 
     <br><br> 
  
-    Price Filter: <input type="range"> 
+    Price Filter: <input type="range" value="10"> 
   
     <br><br> 
  
@@ -164,8 +164,8 @@ width="400"></iframe>
     <br><br> 
  
     Gender: 
-    <input type="radio" name="gender"> Male 
-    <input type="radio" name="gender"> Female 
+    <input type="radio" name="gender" value="Male"> Male 
+    <input type="radio" name="gender" value="Female"> Female 
     <br><br> 
  
     Select Language/s: 
