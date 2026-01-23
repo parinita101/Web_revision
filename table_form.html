@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="5", width="500", align="center" bgcolor="pink">
+        <thead>
+            <td colspan="2" align="center">Registration Form</td>
+        </thead>
+        <tbody align="center">
+            <form>
+            <tr>
+                <td><label for="username">Name</label></td>
+                <td><input type="text", minlength="10" maxlength="30" required name="username" id="username"></td>
+            </tr>
+
+            <tr>
+                <td><label for="mail">Email</label></td>
+                <td><input type="text", minlength="10" maxlength="30" required name="mail" id="mail"></td>
+            </tr>
+
+            <tr>
+                <td><label for="username">Password</label></td>
+                <td><input type="password", minlength="10" maxlength="30" required name="password" id="password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="confirm-password">Confirm Password</label></td>
+                <td><input type="password", minlength="10" maxlength="30" required name="confirm-password" id="confirm-password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="contant-number">Contact Number</label></td>
+                <td><input type="number", minlength="10" maxlength="10" required name="contant-number" id="contant-number"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" id="male" required value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" required value="female">
+                <label for="female">Female</label></td>
+            </tr>
+
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <input type="checkbox" id="html" name="skills" required value="html">
+                    <label for="html">HTML</label>
+                    <br>
+                    <input type="checkbox" id="css" name="skills" required value="css">
+                    <label for="css">CSS</label>
+                    <br>
+                    <input type="checkbox" id="js" name="skills" required value="js">
+                    <label for="js">JS</label>
+                    <br>
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date", required name="dob" id="dob"></td>
+            </tr>
+
+            <tr>
+                <td><label for="file"> Upload Resume</label></td>
+                <td><input type="file", required name="file" id="file"></td>
+            </tr>
+
+            <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Register"> 
+                <input type="reset" value="Clear"> 
+                <input type="button" value="Custom Button"> 
+            </td>
+            </tr>
+        </form>    
+        </tbody>
+    </table>
+    
+</body>
+</html>
