@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        tr{
+            color:blueviolet
+        }
+    </style>
 </head>
 <body>
     
     <table border="5", width="500", align="center" bgcolor="pink">
         <thead>
-            <td colspan="2" align="center">Registration Form</td>
+            <td colspan="2" align="center" style="background:yellow;">Registration Form</td>
         </thead>
         <tbody align="center">
-            <form>
+            <form method="get" action="http://google.com">
             <tr>
                 <td><label for="username">Name</label></td>
                 <td><input type="text", minlength="10" maxlength="30" required name="username" id="username"></td>
