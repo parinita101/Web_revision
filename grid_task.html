@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.box {
+    border: 1px solid black;
+    height: 100px;
+}
+
+/* Row 1 */
+.box1 { background-color: red; grid-column: span 2; } 
+.box2 { background-color: lightgreen; } 
+.box3 { background-color: orange; } 
+
+/* Row 2 */
+.box4 { background-color: orange; } 
+.box5 { background-color: green; } 
+.box6 { background-color: lightgreen; grid-column: span 1; } 
+
+/* Row 3 and 4 (large orange box spans both) */
+.box7 { background-color: #ffa500; grid-column: span 2; grid-row: span 2; height: 210px; } 
+.box8 { background-color: lightgreen; } 
+.box9 { background-color: red; } 
+.box10 { background-color: #90ee90; } 
+
+/* Row 5 (these will flow correctly after the others) */
+.box11 { background-color: #006400; grid-column: span 3; } 
+.box12 { background-color: #ffa500; } 
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+    <div class="box box9"></div>
+    <div class="box box10"></div>
+    <div class="box box11"></div>
+    <div class="box box12"></div>
+</div>
+</body>
+</html>
